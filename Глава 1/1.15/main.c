@@ -1,0 +1,22 @@
+//
+// Created by Oleg Bukatchuk on 15/10/2017.
+//
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+    char txt[100] = "Введите текстовое значение: ";
+    char str[120];
+
+    printf("%s", txt);
+    scanf("%[^\n]", str);
+
+    strcpy(txt, "Вы ввели текст: ");
+
+    printf("%s%s\n", txt, str);
+
+    return 0;
+}
+
