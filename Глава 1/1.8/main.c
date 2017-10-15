@@ -6,6 +6,8 @@
 #include <stdlib.h>
 
 int main(void) {
+
+    // Целочисленная переменная
     int number;
 
     printf("Введите целое число: ");

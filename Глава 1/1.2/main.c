@@ -6,6 +6,7 @@
 #include <stdlib.h>
 
 int main(void) {
+
     printf("Размер (в байтах) для типов данных:\n\n");
 
     printf("Тип данных int: \t%lu\n", sizeof(int));

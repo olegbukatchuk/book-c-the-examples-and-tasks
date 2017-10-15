@@ -6,10 +6,15 @@
 #include <stdlib.h>
 
 int main(void) {
+
+    // Символьные переменные
     char first = 'A', last = 'Z';
     char x;
+
+    // Целочисленная переменная
     int count;
 
+    // Считаем значения переменных
     count = last - first + 1;
     x = first + 10;
 

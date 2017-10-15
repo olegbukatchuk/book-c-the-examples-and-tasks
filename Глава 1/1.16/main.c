@@ -35,6 +35,6 @@ int main(void) {
 
         printf("\t%.1f\t%e\n", b, energy);
     }
-    
+
     return 0;
 }
