@@ -10,7 +10,7 @@
 
 // Определение макроса (с одним аргументом)
 #define numbers(n) int k;\
-        for (k = 1; k <= (n); k++) {\
+        for (k=1;k<=(n);k++) {\
             printf("%d ", k);\
         }\
         printf("\n");

@@ -11,7 +11,7 @@ int main(void) {
     int n;
 
     // Верхний индекс и значение коэффициента
-    int k = 0, C = 1;
+    int k=0, C=1;
 
     printf("Введите целое число: ");
     scanf("%d", &n);
@@ -24,10 +24,10 @@ int main(void) {
         printf(" %d |", C);
 
         // Считаем коэффициенты
-        C = C * (n - k) / (k + 1);
+        C=C*(n-k)/(k+1);
         k++;
 
-    } while (k <= n);
+    } while (k<=n);
 
     printf("\n");
 

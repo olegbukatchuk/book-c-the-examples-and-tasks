@@ -33,16 +33,16 @@ double getNumber(unsigned int a, unsigned int b) {
     double x, y;
 
     // Начальные значения локальных переменных
-    x = a;
-    y = b;
+    x=a;
+    y=b;
 
     // Значение переменной y (делится на 10 пока не станет меньше 1)
-    while (y >= 1) {
-        y /= 10;
+    while (y>=1) {
+        y/=10;
     }
 
     // Возвращаем результат
-    return x + y;
+    return x+y;
 
 }
 
@@ -55,13 +55,13 @@ int main(void) {
     show(10);
 
     // Целочисленные переменные
-    unsigned int m = 12, n = 345;
+    unsigned int m=12, n=345;
 
     // Переменная для записи результата
     double res;
 
     // Вызов функции с двумя аргументами и запись в переменую
-    res = getNumber(m, n);
+    res=getNumber(m, n);
 
     printf("Исходные целые числа: %u и %u\n", m, n);
     printf("Получилось число: %f\n", res);
