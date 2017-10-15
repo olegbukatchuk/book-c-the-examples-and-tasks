@@ -11,16 +11,16 @@ int main(void) {
     int number;
 
     printf("Введите целое число: ");
-    scanf("%d", &number);
+    scanf("%d",&number);
 
     // Условие
-    if (number%2 == 0) {
+    if (number%2==0) {
 
         // Если условие истинно
         printf("Чётное число!\n");
     }
 
-    if (number%2 == 1) {
+    if (number%2==1) {
 
         // Если условие истинно
         printf("Нечётное число!\n");

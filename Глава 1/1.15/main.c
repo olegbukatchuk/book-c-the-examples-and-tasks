@@ -12,14 +12,15 @@ int main(void) {
     char txt[100]="Введите текстовое значение: ";
     char str[120];
 
-    printf("%s", txt);
-    scanf("%[^\n]", str);
+    printf("%s",txt);
+    scanf("%[^\n]",str);
 
     // Копирование текстовой строки
     strcpy(txt, "Вы ввели текст: ");
 
-    printf("%s%s\n", txt, str);
+    printf("%s%s\n",txt,str);
 
     return 0;
+
 }
 

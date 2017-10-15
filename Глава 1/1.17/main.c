@@ -16,7 +16,7 @@ int main(void) {
     // Значение первого элемента в массиве
     pwr[0]=1;
 
-    printf("| %d |", pwr[0]);
+    printf("| %d |",pwr[0]);
 
     // Индексная переменная
     int k=1;
@@ -26,7 +26,7 @@ int main(void) {
         // Значение элемента массива
         pwr[k]=pwr[k-1]*2;
 
-        printf(" %d |", pwr[k]);
+        printf(" %d |",pwr[k]);
 
         k++;
     }
@@ -35,4 +35,5 @@ int main(void) {
 
 
     return 0;
+
 }

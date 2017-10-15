@@ -21,9 +21,9 @@ int main(void) {
 
     }
 
-    printf("Текст: %s\n", txt);
-    printf("Количество символов:\t%d\n", length);
-    printf("Контрольное значение:\t%lu\n", strlen(txt));
+    printf("Текст: %s\n",txt);
+    printf("Количество символов:\t%d\n",length);
+    printf("Контрольное значение:\t%lu\n",strlen(txt));
 
     return 0;
 

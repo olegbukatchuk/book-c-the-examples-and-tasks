@@ -21,7 +21,7 @@ int main(void) {
 
         // Считаем значение для каждого элемента массива
         nums[k]=2*k+1;
-        printf("%d ", nums[k]);
+        printf("%d ",nums[k]);
     }
 
     printf("\n");

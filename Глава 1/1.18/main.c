@@ -18,19 +18,19 @@ int main(void) {
     int k=0;
 
     // Действительная и мнимая части исходного числа
-    double x=3, y=4;
+    double x=3,y=4;
 
     // Переменные для записи результатов промежуточных вычислений
-    double r, phi, arg;
+    double r,phi,arg;
 
     // Вычисление значений параметров
-    r=pow(x*x+y*y, 0.5 / n);
-    phi=atan2(y, x);
+    r=pow(x*x+y*y,0.5/n);
+    phi=atan2(y,x);
 
     // Вывод исходного числа
-    printf("Re(z) = %.3f\tIm(z) = %.3f\n", x, y);
+    printf("Re(z) = %.3f\tIm(z) = %.3f\n",x,y);
 
-    printf("Результат вычисления корня степени %d:\n", n);
+    printf("Результат вычисления корня степени %d:\n",n);
     printf("k\t Re\t Im\n");
 
     while (k<n) {
@@ -38,7 +38,7 @@ int main(void) {
         // Аргумент для тригонометрических функций
         arg=(phi+2*pi*k);
 
-        printf("%d\t%.3f\t%.3f\n", k, r*cos(arg), r*sin(arg));
+        printf("%d\t%.3f\t%.3f\n",k,r*cos(arg),r*sin(arg));
 
         k++;
 

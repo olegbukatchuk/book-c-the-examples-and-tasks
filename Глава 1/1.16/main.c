@@ -16,10 +16,10 @@ int main(void) {
 
     // Переменые для записи значения энергии и
     // безразмерной скорости (в единицах скорости света)
-    double energy, b;
+    double energy,b;
 
     // Переменные для использования в операторе цикла
-    int n=10, k;
+    int n=10,k;
 
     printf("Скорость v/c\tЭнергия(Дж)\n");
 
@@ -33,8 +33,9 @@ int main(void) {
         // Энергия электрона
         energy=m*c*c*(1/sqrt(1-b*b)-1);
 
-        printf("\t%.1f\t%e\n", b, energy);
+        printf("\t%.1f\t%e\n",b,energy);
     }
 
     return 0;
+
 }

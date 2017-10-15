@@ -18,8 +18,8 @@ void show(int n) {
     int k;
 
     // Выводим натуральные числа
-    for (k = 1; k <= n; k++) {
-        printf("%d ", k);
+    for (k=1;k<=n;k++) {
+        printf("%d ",k);
     }
 
     printf("\n");
@@ -27,10 +27,10 @@ void show(int n) {
 }
 
 // Функция с двумя целочисленными аргументами (возвращает действительное цисло)
-double getNumber(unsigned int a, unsigned int b) {
+double getNumber(unsigned int a,unsigned int b) {
 
     // Локальные переменные
-    double x, y;
+    double x,y;
 
     // Начальные значения локальных переменных
     x=a;
@@ -55,16 +55,16 @@ int main(void) {
     show(10);
 
     // Целочисленные переменные
-    unsigned int m=12, n=345;
+    unsigned int m=12,n=345;
 
     // Переменная для записи результата
     double res;
 
     // Вызов функции с двумя аргументами и запись в переменую
-    res=getNumber(m, n);
+    res=getNumber(m,n);
 
-    printf("Исходные целые числа: %u и %u\n", m, n);
-    printf("Получилось число: %f\n", res);
+    printf("Исходные целые числа: %u и %u\n",m,n);
+    printf("Получилось число: %f\n",res);
 
     return 0;
 

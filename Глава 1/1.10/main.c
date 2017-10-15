@@ -11,17 +11,17 @@ int main(void) {
     int n;
 
     // Верхний индекс и значение коэффициента
-    int k=0, C=1;
+    int k=0,C=1;
 
     printf("Введите целое число: ");
-    scanf("%d", &n);
+    scanf("%d",&n);
 
     printf("|");
 
     // Цикл расчёта
     do {
 
-        printf(" %d |", C);
+        printf(" %d |",C);
 
         // Считаем коэффициенты
         C=C*(n-k)/(k+1);
@@ -32,4 +32,5 @@ int main(void) {
     printf("\n");
 
     return 0;
+
 }

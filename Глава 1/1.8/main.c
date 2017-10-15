@@ -11,9 +11,10 @@ int main(void) {
     int number;
 
     printf("Введите целое число: ");
-    scanf("%d", &number);
+    scanf("%d",&number);
 
-    printf(number%2 ? "Нечётное число!\n" : "Чётное число!\n");
+    printf(number%2?"Нечётное число!\n":"Чётное число!\n");
 
     return 0;
+
 }
