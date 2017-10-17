@@ -37,5 +37,5 @@ int main(void) {
     findRoot(0,0);
 
     return 0;
-    
+
 }
