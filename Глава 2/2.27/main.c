@@ -6,14 +6,17 @@
 #include <stdlib.h>
 #include <math.h>
 
+// Функция для поиска решений квадратного уравнения
 void solve(double A,double B,double C) {
 
     printf("Решение квадратного уравнения A*x*x+B*x+C=0\n");
 
     printf("Значение параметров: A=%.2f, B=%.2f, C=%.2f\n",A,B,C);
 
+    // Значение дискриминанта
     double D;
 
+    // Перебор разных вариантов
     if (A==0) {
 
         printf("Решается линейное уравнение\n");
@@ -68,6 +71,8 @@ void solve(double A,double B,double C) {
 
 int main(void) {
 
+    // Вызов функции (с разными аргументами)
+    // для поиска решений квадратного уравнения
     solve(2,-3,1);
     solve(4,12,9);
     solve(1,2,2);
