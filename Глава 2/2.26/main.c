@@ -7,20 +7,22 @@
 
 int main(void) {
 
-    // Количество слагаемых
     int n=10;
 
-    // Коли
-    int s;
+    int k=1,s=0;
 
-    for (s=0;n;n--) {
+    start:
 
-        s+=2*n-1;
+    s+=2*k-1;
+    k++;
+
+    if (k<=n) {
+
+        goto start;
 
     }
 
-    printf("%d\n",s);
+    printf("1+3+5+...+%d=%d\n",2*n-1,s);
 
     return 0;
-
 }

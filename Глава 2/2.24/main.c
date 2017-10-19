@@ -7,20 +7,23 @@
 
 int main(void) {
 
-    // Количество слагаемых
     int n=10;
 
-    // Коли
-    int s;
+    printf("Сумма %d нечётных чисел равна ",n);
 
-    for (s=0;n;n--) {
+    int k,q=1,s=0;
 
-        s+=2*n-1;
+    for (k=1;k<=n;q++) {
+
+        if (q%2==0) {
+
+            continue;
+
+        }
 
     }
 
     printf("%d\n",s);
 
     return 0;
-
 }
