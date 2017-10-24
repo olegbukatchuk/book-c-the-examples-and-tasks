@@ -26,6 +26,11 @@ int main(void) {
 
     printf("Число (тип int):\t%f\n",x);
 
+    pnt=&symb;
+    *((char*)pnt)='D';
+
+    printf("Символ (тип char):\t%c\n",symb);
+
     return 0;
 
 }
