@@ -1,30 +1,19 @@
-//
-// Created by Oleg Bukatchuk on 15/10/2017.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-
-    // Целочисленная переменная
-    int number;
+int main(void)
+{
+    int number; /* Целочисленная переменная */
 
     printf("Введите целое число: ");
-    scanf("%d",&number);
+    scanf("%d", &number);
 
-    // Условие
-    if (number%2==0) {
+    /* Условие */
+    if (number % 2 == 0)
+        printf("Чётное число!\n");   /* Если условие истинно */
 
-        // Если условие истинно
-        printf("Чётное число!\n");
-    }
-
-    if (number%2==1) {
-
-        // Если условие истинно
-        printf("Нечётное число!\n");
-    }
+    if (number % 2 == 1)
+        printf("Нечётное число!\n"); /* Если условие истинно */
 
     return 0;
 }

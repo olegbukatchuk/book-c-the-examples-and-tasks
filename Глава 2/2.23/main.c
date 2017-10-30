@@ -1,27 +1,19 @@
-//
-// Created by Oleg Bukatchuk on 19/10/2017.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main(void)
+{
+    /* Количество слагаемых */
+    int n = 10;
 
-    // Количество слагаемых
-    int n=10;
-
-    // Сумма
+    /* Сумма */
     int s;
 
-    // Вычисление суммы
-    for (s=0;n;n--) {
+    /* Вычисление суммы */
+    for (s = 0; n; n--)
+        s += 2 * n - 1;
 
-        s+=2*n-1;
-
-    }
-
-    printf("%d\n",s);
+    printf("%d\n", s);
 
     return 0;
-
 }

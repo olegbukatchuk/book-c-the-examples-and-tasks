@@ -1,46 +1,38 @@
-//
-// Created by Oleg Bukatchuk on 27/10/2017.
-//
-
-// Глобальные переменные
 #include <stdio.h>
 #include <stdlib.h>
 
-// Глобальные переменные
-int number=100;
-char symbol='A';
+/* Глобальные переменные */
+int number = 100;
+char symbol = 'A';
 
-// Функция с локальной переменной
-void show(void) {
+/* Функция с локальной переменной */
+void show(void)
+{
+    int number = 200;
 
-    int number=200;
-
-    printf("Локальная переменная:\t%d\n",number);
-    printf("Символьная переменная:\t%c\n",symbol);
-
+    printf("Локальная переменная:\t%d\n", number);
+    printf("Символьная переменная:\t%c\n", symbol);
 }
 
-// Функция с аргументом
-void showInt(int number) {
-
-    printf("Аргумент функции:\t%d\n",number);
-    printf("Символьная переменная:\t%c\n",symbol);
-
+/* Функция с аргументом */
+void showInt(int number)
+{
+    printf("Аргумент функции:\t%d\n", number);
+    printf("Символьная переменная:\t%c\n", symbol);
 }
 
-int main(void) {
+int main(void)
+{
+    char symbol = 'B';
 
-    char symbol='B';
+    printf("Глобальная перменная:\t%d\n", number);
+    printf("Символьная переменная:\t%c\n", symbol);
 
-    printf("Глобальная перменная:\t%d\n",number);
-    printf("Символьная переменная:\t%c\n",symbol);
-
-    // Вызов функции с локальной переменной
+    /* Вызов функции с локальной переменной */
     show();
 
-    // Вызов функции с аргументом
+    /* Вызов функции с аргументом */
     showInt(300);
 
     return 0;
-
 }
